@@ -1,38 +1,92 @@
-.App {
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+  padding-top: 5em;
+  padding-bottom: 5em;
+  background-color: rgb(8, 24, 23);
+}
+.calendar {
+  width: 50vw;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  padding: 2em;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  border-radius: 0.5em;
+  background-image: url("https://i.ibb.co/cYXK6V7/day10.png" );
+  background-position: calc(50% - 10px) center;
+  background-size:cover;
+}
+
+.door {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 10vw;
+  height: 10vw;
+  background-color: rgba(8, 20, 16, 0.6);
+  border: 1px solid #ccc;
+  border-radius: 0.5em;
+  margin-bottom: 1em;
+  margin-right: 1em;
+}
+
+.door p {
+  font-size: 2em;
+  color: #f2f2f2;
+}
+
+.door:hover {
+  background-color: rgba(18, 43, 54, 0.9);
+}
+
+.dooropen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 10vw;
+  height: 10vw;
+  background-color: rgb(8, 24, 23, 0.8);
+  border: 1px solid #ccc;
+  border-radius: 0.5em;
+  margin-bottom: 1em;
+  margin-right: 1em;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.dooropen a, .dooropen a:visited {
+  color: white; 
+  text-decoration: none;
+}
+.resetbutton {
+  margin-top: 5em;
+  background-color: rgba(18, 43, 54, 0.9);
+  width: 100%;
+  height: 3em;
+  padding: 0.5em;
+  border-radius: 0.5em;
+  border: none;
+  font-size: 1em;
+  font-weight: bold;
+  color: #f2f2f2;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.resetbutton:hover {
+  background-color: rgba(35, 71, 87, 0.9);
+}
+.resetbutton:active {
+  background-color: rgba(71, 120, 141, 0.9);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.door p, .dooropen a, .dooropen a:visited {
+  font-family: Kalnia, sans-serif;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.resetbutton{
+  font-family: Kalnia, sans-serif;
 }
